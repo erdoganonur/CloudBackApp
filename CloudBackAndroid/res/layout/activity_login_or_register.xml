@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/theme"
+    tools:context=".LoginOrRegisterActivity" >
+
+    <Button
+        android:id="@+id/BUTTON_SELECT_REGISTER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="180dp"
+        android:onClick="doSelect"
+        android:text="@string/register" />
+
+    <Button
+        android:id="@+id/BUTTON_SELECT_LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BUTTON_SELECT_REGISTER"
+        android:layout_alignRight="@+id/BUTTON_SELECT_REGISTER"
+        android:layout_alignTop="@+id/BUTTON_SELECT_REGISTER"
+        android:layout_marginTop="47dp"
+        android:onClick="doSelect"
+        android:text="@string/login" />
+
+</RelativeLayout>

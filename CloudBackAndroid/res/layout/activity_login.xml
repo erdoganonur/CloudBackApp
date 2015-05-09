@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/theme"
+    tools:context=".LoginActivity" >
+
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/Login"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/EDITTEXT_LOGIN_USERNAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/label_name"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/label_name"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="@string/Username" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/EDITTEXT_LOGIN_PASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EDITTEXT_LOGIN_USERNAME"
+        android:layout_alignRight="@+id/EDITTEXT_LOGIN_USERNAME"
+        android:layout_below="@+id/EDITTEXT_LOGIN_USERNAME"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/BUTTON_LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EDITTEXT_LOGIN_PASSWORD"
+        android:layout_alignRight="@+id/EDITTEXT_LOGIN_PASSWORD"
+        android:layout_centerVertical="true"
+        android:onClick="login"
+        android:text="@string/Login" />
+
+</RelativeLayout>
