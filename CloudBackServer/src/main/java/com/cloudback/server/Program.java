@@ -1,4 +1,4 @@
-package cloudback.server;
+package com.cloudback.server;
 
 public class Program {
 
@@ -6,9 +6,7 @@ public class Program {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		CloudBackServer.Run();
-		
 	}
 
 }

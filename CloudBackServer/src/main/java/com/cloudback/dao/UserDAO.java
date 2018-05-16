@@ -1,11 +1,11 @@
-package cloudback.DAO;
+package com.cloudback.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import cloudback.common.StatusCodes;
-import cloudback.db.DbConnection;
-import cloudback.entities.User;
+import com.cloudback.common.StatusCodes;
+import com.cloudback.db.DbConnection;
+import com.cloudback.entities.User;
 
 public class UserDAO
 {

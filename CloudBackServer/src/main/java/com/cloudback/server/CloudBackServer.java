@@ -1,4 +1,4 @@
-package cloudback.server;
+package com.cloudback.server;
 
 public class CloudBackServer {
 

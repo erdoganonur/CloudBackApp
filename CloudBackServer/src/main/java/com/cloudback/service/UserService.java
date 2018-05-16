@@ -1,13 +1,13 @@
-package cloudback.service;
+package com.cloudback.service;
 
 import java.sql.SQLException;
 
-import cloudback.DAO.UserDAO;
-import cloudback.common.StatusCodes;
-import cloudback.common.TCP;
-import cloudback.common.TCP.TCPException;
-import cloudback.db.DbConnection;
-import cloudback.entities.User;
+import com.cloudback.dao.UserDAO;
+import com.cloudback.common.StatusCodes;
+import com.cloudback.common.TCP;
+import com.cloudback.common.TCP.TCPException;
+import com.cloudback.db.DbConnection;
+import com.cloudback.entities.User;
 
 public class UserService
 {

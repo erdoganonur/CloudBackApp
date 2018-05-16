@@ -1,4 +1,4 @@
-package cloudback.common;
+package com.cloudback.common;
 
 public class BackupTypes
 {

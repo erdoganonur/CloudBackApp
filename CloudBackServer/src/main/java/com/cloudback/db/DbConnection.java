@@ -1,4 +1,4 @@
-package cloudback.db;
+package com.cloudback.db;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -12,7 +12,7 @@ public class DbConnection
 {
 
 	private final String URL = "jdbc:postgresql://localhost:5432/CloudBack";
-	private final String USER_NAME = "cloudback";
+	private final String USER_NAME = "com/cloudback";
 	private final String PASSWORD = "As123456";
 
 	private Connection conn;

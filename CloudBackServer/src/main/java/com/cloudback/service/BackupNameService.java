@@ -1,13 +1,12 @@
-package cloudback.service;
+package com.cloudback.service;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import cloudback.DAO.BackupNameDAO;
-import cloudback.common.TCP;
-import cloudback.common.TCP.TCPException;
-import cloudback.db.DbConnection;
-import cloudback.entities.BackupName;
+import com.cloudback.dao.BackupNameDAO;
+import com.cloudback.common.TCP;
+import com.cloudback.db.DbConnection;
+import com.cloudback.entities.BackupName;
 
 public class BackupNameService
 {
@@ -43,7 +42,7 @@ public class BackupNameService
 		return backupNameDAO.getBackupNames(userId, backupType);
 	}
 
-	public void sendBackupNames2Server(int backupType) throws SQLException, TCPException
+	public void sendBackupNames2Server(int backupType) throws SQLException, TCP.TCPException
 	{
 		String username = m_clientTCP.ReceiveString();
 		UserService userService = new UserService(m_clientTCP, m_dbConn);

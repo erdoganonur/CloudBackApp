@@ -1,16 +1,16 @@
-package cloudback.service;
+package com.cloudback.service;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import cloudback.DAO.BackupNameDAO;
-import cloudback.DAO.ContactDAO;
-import cloudback.common.BackupTypes;
-import cloudback.common.StatusCodes;
-import cloudback.common.TCP;
-import cloudback.common.TCP.TCPException;
-import cloudback.db.DbConnection;
-import cloudback.entities.Contact;
+import com.cloudback.dao.BackupNameDAO;
+import com.cloudback.dao.ContactDAO;
+import com.cloudback.common.BackupTypes;
+import com.cloudback.common.StatusCodes;
+import com.cloudback.common.TCP;
+import com.cloudback.common.TCP.TCPException;
+import com.cloudback.db.DbConnection;
+import com.cloudback.entities.Contact;
 
 public class ContactService
 {

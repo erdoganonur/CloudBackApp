@@ -1,12 +1,12 @@
-package cloudback.DAO;
+package com.cloudback.dao;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import cloudback.db.DbConnection;
-import cloudback.entities.BackupName;
+import com.cloudback.db.DbConnection;
+import com.cloudback.entities.BackupName;
 
 public class BackupNameDAO
 {

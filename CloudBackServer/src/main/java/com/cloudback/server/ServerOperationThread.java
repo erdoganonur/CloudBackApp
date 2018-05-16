@@ -1,17 +1,16 @@
-package cloudback.server;
+package com.cloudback.server;
 
 import java.sql.SQLException;
 
-import cloudback.common.BackupTypes;
-import cloudback.common.ClientOperations;
-import cloudback.common.TCP;
-import cloudback.common.TCP.TCPException;
-import cloudback.db.DbConnection;
-import cloudback.service.BackupFileService;
-import cloudback.service.BackupNameService;
-import cloudback.service.ContactService;
-import cloudback.service.SmsService;
-import cloudback.service.UserService;
+import com.cloudback.common.BackupTypes;
+import com.cloudback.common.ClientOperations;
+import com.cloudback.common.TCP;
+import com.cloudback.db.DbConnection;
+import com.cloudback.service.BackupFileService;
+import com.cloudback.service.BackupNameService;
+import com.cloudback.service.ContactService;
+import com.cloudback.service.SmsService;
+import com.cloudback.service.UserService;
 
 public class ServerOperationThread extends Thread
 {
@@ -56,7 +55,7 @@ public class ServerOperationThread extends Thread
 		this.threadName = threadName;
 	}
 
-	public void doOperation(int operation, TCP clientTCP) throws TCPException,
+	public void doOperation(int operation, TCP clientTCP) throws TCP.TCPException,
 			SQLException
 	{
 
@@ -194,7 +193,7 @@ public class ServerOperationThread extends Thread
 					break;
 				}
 			}
-		} catch (TCPException e)
+		} catch (TCP.TCPException e)
 		{
 			e.printStackTrace();
 		} catch (SQLException e)

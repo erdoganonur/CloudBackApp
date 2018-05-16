@@ -1,4 +1,4 @@
-package cloudback.entities;
+package com.cloudback.entities;
 
 public class Sms
 {

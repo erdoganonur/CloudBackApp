@@ -1,8 +1,7 @@
-package cloudback.server;
+package com.cloudback.server;
 
-import cloudback.common.TCP;
-import cloudback.common.TCP.TCPException;
-import cloudback.db.DbConnection;
+import com.cloudback.common.TCP;
+import com.cloudback.db.DbConnection;
 
 public class ServerInitThread extends Thread
 {
@@ -20,7 +19,7 @@ public class ServerInitThread extends Thread
 
 		try
 		{
-			tcp = new TCP(7070);
+			tcp = new TCP(6060);
 			dbConn = new DbConnection();
 			System.out.println("Server started !!");
 
@@ -31,7 +30,7 @@ public class ServerInitThread extends Thread
 				new ServerOperationThread("ServerOperation", clientTCP, dbConn).start();
 
 			}
-		} catch (TCPException e)
+		} catch (TCP.TCPException e)
 		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();

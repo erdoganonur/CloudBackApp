@@ -1,13 +1,13 @@
-package cloudback.DAO;
+package com.cloudback.dao;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import cloudback.common.StatusCodes;
-import cloudback.db.DbConnection;
-import cloudback.entities.Contact;
+import com.cloudback.common.StatusCodes;
+import com.cloudback.db.DbConnection;
+import com.cloudback.entities.Contact;
 
 public class ContactDAO
 {
